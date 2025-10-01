@@ -2,11 +2,11 @@ import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
-  selector: 'ghoul-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.html',
-  styleUrl: './app.scss',
+    selector: 'ghoul-root',
+    imports: [RouterOutlet],
+    templateUrl: './app.html',
+    styleUrl: './app.scss',
 })
 export class App {
-  protected readonly title = signal('ghoul');
+    protected readonly title = signal('ghoul');
 }

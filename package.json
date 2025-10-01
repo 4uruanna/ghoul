@@ -1,67 +1,55 @@
 {
-  "name": "ghoul",
-  "version": "0.0.0",
-  "scripts": {
-    "dev": "nodemon",
-    "start": "ng cache clean && ng serve",
-    "build": "ng build --configuration production",
-    "watch": "ng build --watch --configuration development",
-    "lint": "ng lint",
-    "test": "ng test",
-    "local:update": "npm run local:components:update && npm run local:icons:update && npm update local-ghoul-components local-ghoul-icons",
-    "local:components:update": "cp ../ghoul-libs/dist/ghoul-components/*.tgz ./local_modules/ghoul-components.tgz",
-    "local:icons:update": "cp ../ghoul-libs/dist/ghoul-icons/*.tgz ./local_modules/ghoul-icons.tgz"
-  },
-  "prettier": {
-    "printWidth": 100,
-    "singleQuote": true,
-    "overrides": [
-      {
-        "files": "*.html",
-        "options": {
-          "parser": "angular"
-        }
-      }
-    ]
-  },
-  "private": true,
-  "dependencies": {
-    "@angular/common": "^20.3.0",
-    "@angular/compiler": "^20.3.0",
-    "@angular/core": "^20.3.0",
-    "@angular/forms": "^20.3.0",
-    "@angular/platform-browser": "^20.3.0",
-    "@angular/router": "^20.3.0",
-    "@ngx-translate/core": "^17.0.0",
-    "@ngx-translate/http-loader": "^17.0.0",
-    "@tailwindcss/postcss": "^4.1.13",
-    "ghoul-components": "^0.0.2",
-    "ghoul-icons": "^0.0.2",
-    "local-ghoul-components": "file:./local_modules/ghoul-components.tgz",
-    "local-ghoul-icons": "file:./local_modules/ghoul-icons.tgz",
-    "postcss": "^8.5.6",
-    "rxjs": "~7.8.0",
-    "tailwindcss": "^4.1.13",
-    "tslib": "^2.3.0",
-    "zone.js": "~0.15.0"
-  },
-  "devDependencies": {
-    "@angular/build": "^20.3.3",
-    "@angular/cli": "^20.3.3",
-    "@angular/compiler-cli": "^20.3.0",
-    "@types/jasmine": "~5.1.0",
-    "angular-eslint": "20.3.0",
-    "eslint": "^9.35.0",
-    "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-prettier": "^5.5.4",
-    "jasmine-core": "~5.9.0",
-    "karma": "~6.4.0",
-    "karma-chrome-launcher": "~3.2.0",
-    "karma-coverage": "~2.2.0",
-    "karma-jasmine": "~5.1.0",
-    "karma-jasmine-html-reporter": "~2.1.0",
-    "nodemon": "^3.1.10",
-    "typescript": "~5.9.2",
-    "typescript-eslint": "8.40.0"
-  }
+    "name": "ghoul",
+    "version": "0.0.0",
+    "scripts": {
+        "dev": "nodemon",
+        "start": "ng cache clean && ng serve",
+        "build": "ng build --configuration production",
+        "watch": "ng build --watch --configuration development",
+        "lint": "ng lint",
+        "test": "ng test",
+        "local:update": "npm run local:components:update && npm run local:icons:update && npm update local-ghoul-components local-ghoul-icons",
+        "local:components:update": "cp ../ghoul-libs/dist/ghoul-components/*.tgz ./local_modules/ghoul-components.tgz",
+        "local:icons:update": "cp ../ghoul-libs/dist/ghoul-icons/*.tgz ./local_modules/ghoul-icons.tgz"
+    },
+    "private": true,
+    "dependencies": {
+        "@angular/common": "^20.3.0",
+        "@angular/compiler": "^20.3.0",
+        "@angular/core": "^20.3.0",
+        "@angular/forms": "^20.3.0",
+        "@angular/platform-browser": "^20.3.0",
+        "@angular/router": "^20.3.0",
+        "@ngx-translate/core": "^17.0.0",
+        "@ngx-translate/http-loader": "^17.0.0",
+        "@tailwindcss/postcss": "^4.1.13",
+        "ghoul-components": "^0.0.2",
+        "ghoul-icons": "^0.0.2",
+        "local-ghoul-components": "file:./local_modules/ghoul-components.tgz",
+        "local-ghoul-icons": "file:./local_modules/ghoul-icons.tgz",
+        "postcss": "^8.5.6",
+        "rxjs": "~7.8.0",
+        "tailwindcss": "^4.1.13",
+        "tslib": "^2.3.0",
+        "zone.js": "~0.15.0"
+    },
+    "devDependencies": {
+        "@angular/build": "^20.3.3",
+        "@angular/cli": "^20.3.3",
+        "@angular/compiler-cli": "^20.3.0",
+        "@types/jasmine": "~5.1.0",
+        "angular-eslint": "20.3.0",
+        "eslint": "^9.35.0",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-prettier": "^5.5.4",
+        "jasmine-core": "~5.9.0",
+        "karma": "~6.4.0",
+        "karma-chrome-launcher": "~3.2.0",
+        "karma-coverage": "~2.2.0",
+        "karma-jasmine": "~5.1.0",
+        "karma-jasmine-html-reporter": "~2.1.0",
+        "nodemon": "^3.1.10",
+        "typescript": "~5.9.2",
+        "typescript-eslint": "8.40.0"
+    }
 }

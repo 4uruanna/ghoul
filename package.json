@@ -6,6 +6,7 @@
     "start": "ng cache clean && ng serve",
     "build": "ng build --configuration production",
     "watch": "ng build --watch --configuration development",
+    "lint": "ng lint",
     "test": "ng test",
     "local:components:updates": "cp ../ghoul-libs/dist/ghoul-components/*.tgz ./local_modules/ghoul-components.tgz && npm update local-ghoul-components"
   },
@@ -40,6 +41,10 @@
     "@angular/cli": "^20.3.3",
     "@angular/compiler-cli": "^20.3.0",
     "@types/jasmine": "~5.1.0",
+    "angular-eslint": "20.3.0",
+    "eslint": "^9.35.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
     "jasmine-core": "~5.9.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
@@ -47,6 +52,7 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "nodemon": "^3.1.10",
-    "typescript": "~5.9.2"
+    "typescript": "~5.9.2",
+    "typescript-eslint": "8.40.0"
   }
 }

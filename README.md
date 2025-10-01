@@ -1,4 +1,4 @@
-# Ghoul <img src="./docs/logo.png" width="16">
+# Ghoul
 
 ## Notes
 

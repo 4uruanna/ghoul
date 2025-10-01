@@ -2,4 +2,19 @@
 
 ## Notes
 
-Must import components using `import { ... } from 'environments/components.ts'` instead of `import { ... } from 'ghoul-components'` or `import { ... } from 'local-ghoul-components'`
+Safe imports
+
+```js
+import { ... } from 'environments/components.ts';
+import { ... } from 'environments/icons.ts';
+```
+
+Never use directly
+
+```js
+import { ... } from 'ghoul-components';
+import { ... } from 'local-ghoul-components';
+
+import { ... } from 'ghoul-icons';
+import { ... } from 'local-ghoul-icons';
+```

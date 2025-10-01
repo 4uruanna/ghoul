@@ -59,6 +59,10 @@
                 {
                   "replace": "src/environments/components.ts",
                   "with": "src/environments/components.development.ts"
+                },
+                {
+                  "replace": "src/environments/icons.ts",
+                  "with": "src/environments/icons.development.ts"
                 }
               ]
             }

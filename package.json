@@ -8,7 +8,9 @@
     "watch": "ng build --watch --configuration development",
     "lint": "ng lint",
     "test": "ng test",
-    "local:components:updates": "cp ../ghoul-libs/dist/ghoul-components/*.tgz ./local_modules/ghoul-components.tgz && npm update local-ghoul-components"
+    "local:update": "npm run local:components:update && npm run local:icons:update && npm update local-ghoul-components local-ghoul-icons",
+    "local:components:update": "cp ../ghoul-libs/dist/ghoul-components/*.tgz ./local_modules/ghoul-components.tgz",
+    "local:icons:update": "cp ../ghoul-libs/dist/ghoul-icons/*.tgz ./local_modules/ghoul-icons.tgz"
   },
   "prettier": {
     "printWidth": 100,
@@ -34,7 +36,9 @@
     "@ngx-translate/http-loader": "^17.0.0",
     "@tailwindcss/postcss": "^4.1.13",
     "ghoul-components": "^0.0.2",
+    "ghoul-icons": "^0.0.2",
     "local-ghoul-components": "file:./local_modules/ghoul-components.tgz",
+    "local-ghoul-icons": "file:./local_modules/ghoul-icons.tgz",
     "postcss": "^8.5.6",
     "rxjs": "~7.8.0",
     "tailwindcss": "^4.1.13",

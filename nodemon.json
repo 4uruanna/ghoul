@@ -1,10 +1,10 @@
 {
   "restartable": "rs",
   "verbose": true,
-  "watch": ["../ghoul-libs/dist/ghoul-components"],
+  "watch": ["../ghoul-libs/dist/ghoul-components", "../ghoul-libs/dist/ghoul-icons"],
   "env": {
     "NODE_ENV": "development"
   },
   "ext": "tgz",
-  "exec": "npm run local:components:updates && npm run start"
+  "exec": "npm run local:update && npm run start"
 }

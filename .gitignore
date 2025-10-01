@@ -41,3 +41,8 @@ __screenshots__/
 # System files
 .DS_Store
 Thumbs.db
+
+# Local libraries
+
+/local_modules/*
+!/local_modules/.gitkeep

@@ -1,0 +1,10 @@
+{
+  "restartable": "rs",
+  "verbose": true,
+  "watch": ["../ghoul-libs/dist/ghoul-components"],
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "ext": "tgz",
+  "exec": "npm run local:components:updates && npm run start"
+}
